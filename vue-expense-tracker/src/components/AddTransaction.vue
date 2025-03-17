@@ -27,7 +27,7 @@ const toast = useToast();
 
 const emit = defineEmits(['submittedTransaction']);
 
-
+//Errored Transaction
     const onSubmit = () => {
         if(!text.value || !amount.value){
             //Toast notification error for fields
@@ -35,6 +35,7 @@ const emit = defineEmits(['submittedTransaction']);
             return;
         };
 
+//Submitted Transaction
     const transactionData = {
             text: text.value,
             amount: parseFloat(amount.value),

@@ -21,6 +21,7 @@ const props = defineProps({
         },
     });
 
+//Gets the id of the transaction to delete
 const deleteTransaction = (id) => {
     emit('transactionDeleted', id);
 

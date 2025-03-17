@@ -13,7 +13,7 @@
 
 <script setup>
   import {defineProps} from 'vue';
-
+//Defining Income and Expenses
     const props = defineProps({
       income: {
         type: Number,
